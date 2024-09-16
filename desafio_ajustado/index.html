@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEXVLFxNYugRy4SN2XTym54pYJ01emaKgdQ&s" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEXVLFxNYugRy4SN2XTym54pYJ01emaKgdQ&s" alt="Logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -70,5 +70,16 @@
     <footer>
         <p>&copy; 2024 Innovative Site. All rights reserved.</p>
     </footer>
+
+    <script>
+                window.onscroll = function() {
+            const header = document.getElementById('header');
+            if (window.scrollY >10) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        };
+    </script>
 </body>
 </html>
