@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,19 @@
     <title>Site modificação</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo">FIAP</div>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEXVLFxNYugRy4SN2XTym54pYJ01emaKgdQ&s"
+                    alt="Logo">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +35,9 @@
 
     <section id="about" class="about-section">
         <h2>About Us</h2>
-        <p>We create beautiful, innovative, and user-friendly websites that enhance your brand and engage your audience.</p>
+        <p>"Somos a empresa que <strong>foi longe demais</strong>. E agora estamos indo além:
+            <strong>ajudando você</strong> a fugir do tédio online!
+        </p>
     </section>
 
     <section id="services" class="services-section">
@@ -47,10 +54,45 @@
             <h3>Marketing Strategy</h3>
             <p>Ajudando você a atingir seu público-alvo de forma eficaz.</p>
         </div>
+        <div class="service-card">
+            <h3>Manutenção de Sites</h3>
+            <p>Porque sempre há algo para consertar</p>
+        </div>
+        <div class="service-card">
+            <h3>Suporte T.I.</h3>
+            <p>Para ajudar quando você esquecer sua senha... de novo.
+            </p>
+        </div>
+        <div class="service-card">
+            <h3>Montagem de PCs</h3>
+            <p>Para quem quer a máquina perfeita (e não confia em uma loja qualquer).</p>
+        </div>
     </section>
 
-    <footer>
+    <div class="whats-button">
+        <a href="#">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/564/original/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png"
+                alt="whatsapp">
+        </a>
+    </div>
+
+    <footer id="contact">
+        <p>Telefone: (99) 99999-9999</p>
+        <p>Email: contato@empresa.com</p>
+        <p>Endereço: Rua do Programador, 404 – Página Não Encontrada, BR</p>
         <p>&copy; 2024 Innovative Site. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.onscroll = function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 10) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        };
+    </script>
 </body>
+
 </html>

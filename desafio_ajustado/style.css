@@ -61,7 +61,7 @@ header {
 
 .hero-section {
     background-image: url(https://www.fiap.com.br/wp-content/themes/fiap2016/images/sharing/fiap.png);
-     height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     color: white;

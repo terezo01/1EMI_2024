@@ -12,10 +12,28 @@ body {
 }
 
 header {
-    background: #333;
+    background: black;
     color: white;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+.header-scrolled .logo img {
+    width: 50px;
+}
+
+.header-scrolled {
+    background: rgba(0, 0, 0, 0.789);
 }
 
 .nav-links {
@@ -40,7 +58,7 @@ header {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology');
+    background-image: url(https://www.fiap.com.br/wp-content/themes/fiap2016/images/sharing/fiap.png);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -49,6 +67,12 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.hero-content{
+    background-color: #333333e5;
+    padding: 60px;
+    border-radius: 10px;
 }
 
 .hero-content h1 {
@@ -73,7 +97,7 @@ header {
 }
 
 .about-section, .services-section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -82,18 +106,49 @@ header {
     font-size: 2rem;
 }
 
+strong{
+    color: #f39c12;
+    font-size: x-large;
+}
+
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+}
+
+.services-section h2{
+    grid-column: span 3;
+}
+
 .service-card {
     background: white;
-    margin: 20px;
     padding: 20px;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     width: 250px;
 }
 
 .service-card h3 {
     margin-bottom: 10px;
+}
+
+.whats-button img{
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: 5px solid green;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.whats-button img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 footer {
